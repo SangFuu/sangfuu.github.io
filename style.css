@@ -1,0 +1,58 @@
+/* Mise en page du portfolio */
+* { box-sizing: border-box; }
+html { scroll-padding-top: 20px; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #e4eef9;
+  background: #101b2c;
+}
+.container { width: min(900px, calc(100% - 40px)); margin: 0 auto; }
+a { color: #94c9ff; text-underline-offset: 3px; }
+a:hover { color: #c9e5ff; }
+a:focus-visible, button:focus-visible { outline: 2px solid #9bd6ff; outline-offset: 4px; }
+header { background: linear-gradient(110deg, #163f72, #285fa6); border-bottom: 1px solid #356a9d; padding: 20px 0 28px; }
+h1 { font-size: 32px; line-height: 1.3; margin: 24px 0 4px; color: #f3f8ff; }
+header p { margin: 0 0 20px; }
+nav { display: flex; flex-wrap: wrap; gap: 10px 26px; }
+nav a { font-weight: bold; }
+.language { display: flex; justify-content: flex-end; align-items: center; gap: 7px; font-size: 14px; }
+.language button { background: transparent; border: 0; padding: 3px; color: #edf6ff; font: inherit; cursor: pointer; text-decoration: underline; }
+.language button[aria-pressed="true"] { font-weight: bold; text-decoration: none; }
+main { padding: 4px 0 20px; }
+section { padding: 24px 0; border-bottom: 1px solid #304963; }
+h2 { margin: 0 0 16px; font-size: 24px; line-height: 1.35; color: #afd7ff; }
+h3 { margin: 0 0 6px; font-size: 19px; line-height: 1.4; color: #e4eef9; }
+p { margin: 12px 0; }
+article { margin: 20px 0; padding: 18px 20px; border: 1px solid #304963; background: #17273d; }
+article p { margin: 10px 0; }
+.technology { font-size: 14px; color: #b0c3da; }
+.more-projects { margin-top: 22px; }
+ul { padding-left: 23px; }
+li { margin: 6px 0; }
+.contact-list { list-style: none; padding-left: 0; }
+footer { padding: 18px 0 30px; font-size: 14px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.skip-link { position: absolute; top: -80px; left: 10px; background: #17273d; padding: 10px; }
+.skip-link:focus { top: 10px; }
+@media (max-width: 600px) {
+  .container { width: calc(100% - 32px); }
+  h1 { font-size: 28px; }
+  nav { gap: 8px 18px; }
+  header { padding-bottom: 22px; }
+  section { padding: 23px 0; }
+  article { padding: 16px; }
+  h2 { font-size: 23px; }
+  h3 { font-size: 18px; }
+  .contact-list a { overflow-wrap: anywhere; }
+  footer { align-items: flex-start; flex-direction: column; gap: 0; }
+}
+@media print {
+  body { background: white; color: #263441; }
+  h1, h2, h3, a, .technology { color: #173d60; }
+  article { background: white; }
+  header { background: white; }
+  .language, nav, footer, .skip-link { display: none; }
+  article { break-inside: avoid; }
+}

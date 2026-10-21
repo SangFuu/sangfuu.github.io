@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Marwane El Fadily, étudiant en L3 informatique : projets, compétences et contact.">
+  <link rel="canonical" href="https://sangfuu.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Marwane El Fadily — Portfolio</title>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-text="skip">Aller au contenu</a>
+  <header>
+    <div class="container">
+      <div class="language" role="group" aria-label="Langue / Language">
+        <button type="button" data-lang="fr" aria-pressed="true">Français</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang="en" aria-pressed="false">English</button>
+      </div>
+      <h1>Marwane El Fadily</h1>
+      <p data-text="subtitle">Étudiant en L3 informatique</p>
+      <nav aria-label="Navigation">
+        <a href="#about" data-text="navAbout">À propos</a>
+        <a href="#projects" data-text="navProjects">Projets</a>
+        <a href="#skills" data-text="navSkills">Compétences</a>
+        <a href="#contact" data-text="navContact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="container">
+    <section id="about">
+      <h2 data-text="aboutTitle">À propos de moi</h2>
+      <p data-text="intro">Bonjour, je m’appelle Marwane. Je suis en troisième année de licence informatique à l’Université de Poitiers et je recherche un stage de fin de licence.</p>
+      <p data-text="interests">Je m’intéresse à la cybersécurité, au développement web et aux bases de données. J’aime coder et apprendre de nouvelles choses. En dehors de l’informatique, j’aime les animés, les jeux vidéo et le sport.</p>
+      <p data-text="purpose">J’ai créé ce portfolio pour présenter quelques projets de licence et un projet personnel.</p>
+    </section>
+    <section id="projects">
+      <h2 data-text="projectsTitle">Mes projets</h2>
+      <p data-text="projectsIntro">Les projets de licence ci-dessous ont été réalisés en binôme avec Adnane Serrai. Le code et les explications sont disponibles sur GitHub.</p>
+      <article>
+        <h3 data-text="dbTitle">Base de données pour une agence immobilière</h3>
+        <p class="technology">SQL · HSQLDB · LibreOffice Base</p>
+        <p data-text="dbText">Nous avons conçu une base de données pour une agence immobilière, avec des tables, des relations et des requêtes SQL. Ce projet m’a permis de travailler la modélisation des données.</p>
+        <a href="https://github.com/SangFuu/real-estate-database" data-text="source">Voir le projet sur GitHub</a>
+      </article>
+      <article>
+        <h3 data-text="logoTitle">Interpréteur Logo</h3>
+        <p class="technology">OCaml · ocamllex · ocamlyacc</p>
+        <p data-text="logoText">Nous avons développé un interpréteur pour un langage de dessin. Le projet porte sur l’analyse des instructions, les variables, les répétitions et les conditions. La version assemblée fonctionne sans interface graphique.</p>
+        <a href="https://github.com/SangFuu/logo-interpreter" data-text="source">Voir le projet sur GitHub</a>
+      </article>
+      <article>
+        <h3 data-text="santaTitle">Au pays du Père Noël</h3>
+        <p class="technology">C# · .NET</p>
+        <p data-text="santaText">Nous avons créé une simulation de fabrication et de livraison de cadeaux. Ce projet m’a permis de pratiquer la programmation orientée objet, en travaillant sur les employés, les cadeaux et les traîneaux.</p>
+        <a href="https://github.com/SangFuu/santa-workshop" data-text="source">Voir le projet sur GitHub</a>
+      </article>
+      <article>
+        <h3>Neon Arena</h3>
+        <p class="technology">C · CMake · Windows</p>
+        <p data-text="neonText">C’est un projet personnel réalisé avec l’aide d’un assistant IA : un jeu dans le terminal avec quatre vagues d’ennemis. Il se joue au clavier et comporte des tirs, une esquive et une attaque spéciale.</p>
+        <a href="https://github.com/SangFuu/neon-arena-terminal" data-text="source">Voir le projet sur GitHub</a>
+      </article>
+      <p class="more-projects"><a href="https://github.com/SangFuu?tab=repositories" data-text="allProjects">Voir mes autres dépôts GitHub</a></p>
+    </section>
+    <section id="skills">
+      <h2 data-text="skillsTitle">Compétences</h2>
+      <p data-text="skillsIntro">Voici les langages et outils que j’utilise dans ma formation et mes projets :</p>
+      <ul>
+        <li><strong data-text="programming">Programmation :</strong> C, Java, OCaml, C#, C++</li>
+        <li><strong data-text="web">Web et données :</strong> HTML, CSS, XML, SQL</li>
+        <li><strong data-text="tools">Outils :</strong> Git, GitLab, CMake, GoogleTest, UML</li>
+        <li><strong data-text="foundations">Fondements :</strong> <span data-text="foundationsText">structures de données, graphes, logique</span></li>
+        <li><strong data-text="languages">Langues :</strong> <span data-text="languagesText">français (langue maternelle), anglais (B2)</span></li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2 data-text="contactTitle">Contact</h2>
+      <p data-text="contactIntro">Pour une proposition de stage ou une question sur mes projets, vous pouvez me contacter :</p>
+      <ul class="contact-list">
+        <li>E-mail : <a href="mailto:marwaneelfadily@gmail.com">marwaneelfadily@gmail.com</a></li>
+        <li>GitHub : <a href="https://github.com/SangFuu">SangFuu</a></li>
+        <li>LinkedIn : <a href="https://www.linkedin.com/in/marwane-el-fadily-8449a1333/">Marwane El Fadily</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="container"><p>© 2026 Marwane El Fadily</p><a href="#main" data-text="top">Retour en haut</a></footer>
+</body>
+</html>
