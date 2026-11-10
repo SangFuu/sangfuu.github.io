@@ -1,6 +1,6 @@
 'use strict';
 
-// Les textes français restent dans le HTML pour fonctionner sans JavaScript.
+// English is the default, including when JavaScript is unavailable.
 const english = {
   skip: 'Skip to content',
   subtitle: 'Third-year computer science student',
@@ -29,10 +29,41 @@ const english = {
   contactIntro: 'For an internship opportunity or a question about my projects, you can contact me:',
   top: 'Back to top'
 };
-const french = {};
-document.querySelectorAll('[data-text]').forEach(element => {
-  french[element.dataset.text] = element.textContent;
-});
+const french = {
+  "skip": "Aller au contenu",
+  "subtitle": "Étudiant en L3 informatique",
+  "navAbout": "À propos",
+  "navProjects": "Projets",
+  "navSkills": "Compétences",
+  "navContact": "Contact",
+  "aboutTitle": "À propos de moi",
+  "intro": "Bonjour, je m’appelle Marwane. Je suis en troisième année de licence informatique à l’Université de Poitiers et je recherche un stage de fin de licence.",
+  "interests": "Je m’intéresse à la cybersécurité, au développement web et aux bases de données. J’aime coder et apprendre de nouvelles choses. En dehors de l’informatique, j’aime les animés, les jeux vidéo et le sport.",
+  "purpose": "J’ai créé ce portfolio pour présenter quelques projets de licence et un projet personnel.",
+  "projectsTitle": "Mes projets",
+  "projectsIntro": "Les projets de licence ci-dessous ont été réalisés en binôme avec Adnane Serrai. Le code et les explications sont disponibles sur GitHub.",
+  "dbTitle": "Base de données pour une agence immobilière",
+  "dbText": "Nous avons conçu une base de données pour une agence immobilière, avec des tables, des relations et des requêtes SQL. Ce projet m’a permis de travailler la modélisation des données.",
+  "source": "Voir le projet sur GitHub",
+  "logoTitle": "Interpréteur Logo",
+  "logoText": "Nous avons développé un interpréteur pour un langage de dessin. Le projet porte sur l’analyse des instructions, les variables, les répétitions et les conditions. La version assemblée fonctionne sans interface graphique.",
+  "santaTitle": "Au pays du Père Noël",
+  "santaText": "Nous avons créé une simulation de fabrication et de livraison de cadeaux. Ce projet m’a permis de pratiquer la programmation orientée objet, en travaillant sur les employés, les cadeaux et les traîneaux.",
+  "neonText": "C’est un projet personnel réalisé avec l’aide d’un assistant IA : un jeu dans le terminal avec quatre vagues d’ennemis. Il se joue au clavier et comporte des tirs, une esquive et une attaque spéciale.",
+  "allProjects": "Voir mes autres dépôts GitHub",
+  "skillsTitle": "Compétences",
+  "skillsIntro": "Voici les langages et outils que j’utilise dans ma formation et mes projets :",
+  "programming": "Programmation :",
+  "web": "Web et données :",
+  "tools": "Outils :",
+  "foundations": "Fondements :",
+  "foundationsText": "structures de données, graphes, logique",
+  "languages": "Langues :",
+  "languagesText": "français (langue maternelle), anglais (B2)",
+  "contactTitle": "Contact",
+  "contactIntro": "Pour une proposition de stage ou une question sur mes projets, vous pouvez me contacter :",
+  "top": "Retour en haut"
+};
 function changeLanguage(language) {
   if (language !== 'fr' && language !== 'en') return;
   const texts = language === 'en' ? english : french;
@@ -52,7 +83,7 @@ function changeLanguage(language) {
 document.querySelectorAll('[data-lang]').forEach(button => {
   button.addEventListener('click', () => changeLanguage(button.dataset.lang));
 });
-let savedLanguage = 'fr';
-try { savedLanguage = localStorage.getItem('portfolio-language') || 'fr'; } catch {}
-changeLanguage(savedLanguage);
+let savedLanguage = 'en';
+try { savedLanguage = localStorage.getItem('portfolio-language') || 'en'; } catch {}
+changeLanguage(savedLanguage === 'fr' ? 'fr' : 'en');
 
