@@ -2,7 +2,7 @@
 
 I am Marwane El Fadily, a third-year computer science student. This website brings together my projects, the skills I am working on and my interests in computer science.
 
-I am particularly interested in cybersecurity, web development and databases. University projects completed in groups are identified as such.
+I am particularly interested in cybersecurity, AI and databases. University projects completed in groups are identified as such.
 
 The website is available in French and English: https://sangfuu.github.io/
 
