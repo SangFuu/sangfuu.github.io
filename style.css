@@ -56,3 +56,5 @@ footer { padding: 18px 0 30px; font-size: 14px; display: flex; align-items: cent
   .language, nav, footer, .skip-link { display: none; }
   article { break-inside: avoid; }
 }
+.cv-button { display: inline-block; padding: 8px 16px; border: 2px solid currentColor; border-radius: 6px; font-weight: bold; text-decoration: none; }
+.cv-button:hover { text-decoration: underline; }

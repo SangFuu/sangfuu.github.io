@@ -27,6 +27,7 @@ const english = {
   languages: 'Languages:', languagesText: 'French (native), English (B2)',
   contactTitle: 'Contact',
   contactIntro: 'For an internship opportunity or a question about my projects, you can contact me:',
+  navCv: 'CV', cvButton: 'Download my CV (PDF)', cvLink: 'CV_Marwane_EL_FADILY.pdf',
   top: 'Back to top'
 };
 const french = {
@@ -62,6 +63,9 @@ const french = {
   "languagesText": "français (langue maternelle), anglais (B2)",
   "contactTitle": "Contact",
   "contactIntro": "Pour une proposition de stage ou une question sur mes projets, vous pouvez me contacter :",
+  "navCv": "CV",
+  "cvButton": "Télécharger mon CV (PDF)",
+  "cvLink": "CV_Marwane_EL_FADILY.pdf",
   "top": "Retour en haut"
 };
 function changeLanguage(language) {
