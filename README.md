@@ -10,8 +10,8 @@ The website is available in French and English: https://sangfuu.github.io/
 
 HTML, CSS and JavaScript, without a framework. The files are served directly by GitHub Pages.
 
-- `index.html`: content and structure.
-- `style.css`: layout and mobile adaptation.
-- `script.js`: French and English language selection.
+- `index.html`: the whole website, with a small game where you sail between islands to discover my projects, and the French and English language selection.
+- `404.html`: the page shown when an address does not exist.
+- `assets/`: my CV and the favicon.
 
 To view the website locally, open `index.html` in a browser or start an HTTP server in the folder. No compilation is required.
